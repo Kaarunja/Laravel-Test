@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LoginController;
-
+use App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +40,6 @@ Route::get('/success',[LoginController::class,'successlogin']);
 
 Route::get('/logout',[LoginController::class,'logout']);
 
-
+Route::get('/test',[TestController::class,'test']);
 
 
